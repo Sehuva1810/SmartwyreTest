@@ -1,26 +1,14 @@
-# Smartwyre Developer Test Instructions
+# Smartwyre Developer Test 
 
-In the 'RebateService.cs' file you will find a method for calculating a rebate. At a high level the steps for calculating a rebate are:
+- The steps are just build, run the tests and the app for your testing purposes.
 
- 1. Lookup the rebate that the request is being made against.
- 2. Lookup the product that the request is being made against.
- 2. Check that the rebate and request are valid to calculate the incentive type rebate.
- 3. Store the rebate calculation.
+One quick note:
 
-What we'd like you to do is refactor the code with the following things in mind:
+On the tests I meant to add logging tests too and the functionality in the app but for time and simplicity I just added some examples on the tests.
+For that you can see the test Calculate_LogError_WhenExceptionIsThrown and the LoggerAdapter and ILoggerAdapter implementations that are needed to test logging.
 
- - Adherence to SOLID principles
- - Testability
- - Readability
- - Currently there are 3 known incentive types. In the future the business will want to add many more incentive types. Your solution should make it easy for developers to add new incentive types in the future.
 
-We’d also like you to 
- - Add some unit tests to the Smartwyre.DeveloperTest.Tests project to show how you would test the code that you’ve produced 
- - Run the RebateService from the Smartwyre.DeveloperTest.Runner console application accepting inputs
+Other than that please reach out for any unexpected issues you may encounter. My email is sehuva.19@gmail.com.
 
-The only specific 'rules' are:
 
-- The solution should build
-- The tests should all pass
-
-You are free to use any frameworks/NuGet packages that you see fit. You should plan to spend around 1 hour completing the exercise.
+Thanks for the opportunity :)
